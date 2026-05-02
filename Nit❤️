@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Nitika 💖</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+    .slide { display: none; }
+    .active { display: block; }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-4">
+
+<div class="bg-white shadow-2xl rounded-2xl p-6 max-w-md w-full text-center">
+
+  <!-- SLIDE 1 -->
+  <div class="slide active">
+    <h1 class="text-3xl font-bold text-pink-500 mb-4">💖 Happy 2 Months 💖</h1>
+    <p>Tap next… I made something for you 💖</p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <p>
+      Nitika Tomar… oops 😅 Nitika Verma ❤️
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <p>
+      We met in university… you were my senior,
+      and I had no idea you would become this important to me.
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide">
+    <p>
+      I approached you first… and you didn’t say yes 😅
+      but I’m really glad you finally did 💕
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide">
+    <p>
+      These 2 months with you have been
+      the most beautiful part of my life 💖
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div class="slide">
+    <p>
+      You became my peace, my happiness,
+      and my safe place 🌸
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div class="slide">
+    <p>
+      That day… when we sat together,
+      eating ice cream 🍦
+      It was simple… but one of my favorite memories ever ✨
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 8 -->
+  <div class="slide">
+    <p>
+      Honestly… I don’t want anyone else but you 💖
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 9 -->
+  <div class="slide">
+    <p>
+      If you weren’t in my life,
+      maybe I would still feel alone…
+      but you changed everything 💫
+    </p>
+    <button onclick="nextSlide()" class="btn">Next ➡️</button>
+  </div>
+
+  <!-- SLIDE 10 (PHOTOS + FINAL LINE) -->
+  <div class="slide">
+    <h2 class="text-xl text-pink-500 mb-3">Our Moments 💞</h2>
+
+    <div class="grid grid-cols-2 gap-2 mb-4">
+      <img src="img1.jpg" class="rounded-xl"/>
+      <img src="img2.jpg" class="rounded-xl"/>
+      <img src="img3.jpg" class="rounded-xl"/>
+      <img src="img4.jpg" class="rounded-xl"/>
+    </div>
+
+    <p class="text-purple-600 font-semibold">
+      Listen baby u heal me bache ❤️
+    </p>
+  </div>
+
+</div>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function nextSlide() {
+    slides[current].classList.remove("active");
+    current++;
+    if (current < slides.length) {
+      slides[current].classList.add("active");
+    }
+  }
+</script>
+
+<style>
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ec4899;
+    color: white;
+    border-radius: 12px;
+  }
+</style>
+
+</body>
+</html>
